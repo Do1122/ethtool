@@ -5567,7 +5567,7 @@ static int do_gfec(struct cmd_context *ctx)
 	}
 
 	fprintf(stdout, "FEC parameters for %s:\n", ctx->devname);
-	fprintf(stdout, "Configured FEC encodings:");
+	fprintf(stdout, "Supported/Configured FEC encodings:");
 	dump_fec(feccmd.fec);
 	fprintf(stdout, "\n");
 
@@ -5732,7 +5732,8 @@ static const struct option args[] = {
 			  "		[ rx-mini N ]\n"
 			  "		[ rx-jumbo N ]\n"
 			  "		[ tx N ]\n"
-			  "             [ rx-buf-len N]\n"
+			  "		[ rx-buf-len N]\n"
+			  "             [ cqe-size N]\n"
 	},
 	{
 		.opts	= "-k|--show-features|--show-offload",
