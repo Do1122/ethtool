@@ -7,6 +7,7 @@ ethtool (1:5.18-1) UNRELEASED; urgency=medium
   * New upstream release: 5.18
   * debian/watch: use uscan version 4
   * Update copyright information for debian/* packaging files
+  * Declare compliance with Debian policy 4.6.1
 
  -- Ben Hutchings <benh@debian.org>  Thu, 02 Jun 2022 19:52:28 +0200
 
