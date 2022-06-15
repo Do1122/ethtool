@@ -5,6 +5,7 @@ ethtool (1:5.18-1) UNRELEASED; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * New upstream release: 5.18
+  * debian/watch: use uscan version 4
 
  -- Ben Hutchings <benh@debian.org>  Thu, 02 Jun 2022 19:52:28 +0200
 
