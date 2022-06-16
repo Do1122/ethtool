@@ -1,4 +1,4 @@
-ethtool (1:5.18-1) UNRELEASED; urgency=medium
+ethtool (1:5.18-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * d/.gitignore: Ignore more debhelper temporary files
@@ -9,7 +9,7 @@ ethtool (1:5.18-1) UNRELEASED; urgency=medium
   * Update copyright information for debian/* packaging files
   * Declare compliance with Debian policy 4.6.1
 
- -- Ben Hutchings <benh@debian.org>  Thu, 02 Jun 2022 19:52:28 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 16 Jun 2022 21:08:14 +0200
 
 ethtool (1:5.17-1) unstable; urgency=medium
 
