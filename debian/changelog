@@ -1,6 +1,6 @@
 ethtool (1:5.19-1) UNRELEASED; urgency=medium
 
-  * New upstream release: 5.18
+  * New upstream release: 5.19
   * debian/copyright: Add new stanza for cpsw.c
   * debian/copyright: Add new stanza for lan743x.c
 
