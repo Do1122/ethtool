@@ -17,6 +17,10 @@ Files: at76c50x-usb.c
 Copyright: 2009, John W. Linville
 License: GPL-2
 
+Files: cpsw.c
+Copyright: 2022, Linutronix GmbH
+License: GPL-2
+
 Files: de2104x.c
 Copyright: 2001, Sun Microsystems (thockin@sun.com)
 License: GPL-2
