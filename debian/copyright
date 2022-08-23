@@ -77,6 +77,10 @@ Copyright: 2004, 2005 Zultys Technologies
            2015, IBM Corporation
 License: GPL-2
 
+Files: lan743x.c
+Copyright: 2022, Microchip Technology Inc. and its subsidiaries
+License: GPL-2
+
 Files: lan78xx.c
 Copyright: 2018, Microchip Technology
 License: GPL-2
