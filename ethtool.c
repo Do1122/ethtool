@@ -1129,6 +1129,8 @@ static const struct {
 	{ "fec", fec_dump_regs },
 	{ "igc", igc_dump_regs },
 	{ "bnxt_en", bnxt_dump_regs },
+	{ "cpsw-switch", cpsw_dump_regs },
+	{ "lan743x", lan743x_dump_regs },
 };
 #endif
 
@@ -3527,11 +3529,15 @@ static int do_seeprom(struct cmd_context *ctx)
 		return 74;
 	}
 
-	if (seeprom_value_seen)
+	if (seeprom_value_seen && !seeprom_length_seen)
 		seeprom_length = 1;
-
-	if (!seeprom_length_seen)
+	else if (!seeprom_length_seen)
 		seeprom_length = drvinfo.eedump_len;
+
+	if (seeprom_value_seen && (seeprom_length != 1)) {
+		fprintf(stderr, "value requires length 1\n");
+		return 1;
+	}
 
 	if (drvinfo.eedump_len < seeprom_offset + seeprom_length) {
 		fprintf(stderr, "offset & length out of bounds\n");
@@ -5734,6 +5740,7 @@ static const struct option args[] = {
 			  "		[ tx N ]\n"
 			  "		[ rx-buf-len N]\n"
 			  "             [ cqe-size N]\n"
+			  "		[ tx-push on|off]\n"
 	},
 	{
 		.opts	= "-k|--show-features|--show-offload",
