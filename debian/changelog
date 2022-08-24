@@ -1,4 +1,4 @@
-ethtool (1:5.19-1) UNRELEASED; urgency=medium
+ethtool (1:5.19-1) unstable; urgency=medium
 
   * New upstream release: 5.19
   * debian/copyright: Add new stanza for cpsw.c
@@ -6,7 +6,7 @@ ethtool (1:5.19-1) UNRELEASED; urgency=medium
   * debian/source/lintian-overrides: Update override for
     orig-tarball-missing-upstream-signature
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 23 Aug 2022 15:40:22 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 24 Aug 2022 07:21:32 +0200
 
 ethtool (1:5.18-1) unstable; urgency=medium
 
